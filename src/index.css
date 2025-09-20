@@ -1,0 +1,22 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import "tailwindcss";
+/* Background: #1E293B (dark slate navy)
+Sidebar: #0F172A
+Text: white (#F8FAFC) */
+
+@theme{
+    --font-luckiest: "Luckiest Guy", cursive;
+    --font-base: "Roboto", sans-serif;
+    --color-background: #F8FAFC;
+    --color-link: #3B4CCA;
+    --color-primary: #FFCB05;
+    --color-error: #CC0000;
+    --color-base: #1E293B;
+   
+    --color-dark-bg: #0F172A;
+    --color-dark-base: #F8FAFC;
+}
+
+@custom-variant dark (&:where(.dark, .dark *));
