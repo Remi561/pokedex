@@ -2,16 +2,15 @@ import React from 'react'
 import SearchBar from './SearchBar'
 import NameList from './NameList'
 import { Names } from './Names'
-import { FaSun, FaTimes } from "react-icons/fa";
+import { FaSun, FaTimes, FaMoon } from "react-icons/fa";
 import { motion } from "framer-motion";
 
 const Sidebar = ({
-  setDarkMode,
-  darkMode,
   activeLink,
   setActiveLink,
   setIsToggle,
-  isToggle,
+  toggleTheme,
+  darkMode,
 }) => {
   const [word, setWord] = React.useState("");
 
@@ -50,8 +49,8 @@ const Sidebar = ({
           </p>
         )}
       </div>
-      <button onClick={() => setDarkMode(!darkMode)} className="self-end">
-        <FaSun className="text-xl dark:text-white" />
+      <button onClick={toggleTheme} className="self-end text-xl">
+        {darkMode ? <FaMoon className="dark:text-white" /> : <FaSun />}
       </button>
     </>
   );
