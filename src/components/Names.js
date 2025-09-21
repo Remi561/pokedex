@@ -29,4 +29,5 @@ export const Names = [
   { id: "028", name: "Sandslash" },
   { id: "029", name: "Nidoran♀" },
   { id: "030", name: "Nidorina" },
+  { id: "242", name: "Blissey" },
 ];
