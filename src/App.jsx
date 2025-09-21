@@ -15,7 +15,7 @@ function App() {
         className={`flex items-center gap-10 ${isToggle && "overflow-x-hidden"} `}
       >
         <div
-          className={`fixed h-screen md:max-w-xs bg-white sm:w-full top-0  sm:left-0 sm:flex items-baseline gap-5 px-3 py-5 hidden sm:flex-col dark:bg-dark-bg `}
+          className={`fixed h-screen sm:max-w-xs bg-white sm:w-full top-0  sm:left-0 sm:flex items-baseline gap-5 px-3 py-5 hidden sm:flex-col dark:bg-dark-bg `}
         >
           <Sidebar
             setDarkMode={setDarkMode}
